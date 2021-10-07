@@ -7,10 +7,6 @@ public class RandomPlatformScale : MonoBehaviour
 {
     [SerializeField] List<GameObject> platforms;
 
-    //Change to "GameEnginesMidterm--RandomScaleDLL" for the random scaling dll
-    //Change to "GameEnginesMidterm--RestoreDLL" for the random scaling dll
-    //You can leave everything else the same when switching, it'll still call the function when using the restore dll,
-    //however the function will not change anything
     [DllImport("GameEnginesMidterm--RandomScaleDLL")]
     private static extern float RandomScaleValue(float minValue, float maxValue);
 
